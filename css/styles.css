@@ -9,7 +9,14 @@
 }
 
 /* Blok tipindeki yazı elemanları için ekstra margin-padding sıfırlama */
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -38,11 +45,9 @@ img {
 
 /* -------------------- Container -------------------- */
 .container {
-  width: 1158px;       
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;  
-  padding-right: 15px;
+  max-width: 1440px;
+  padding: 120px 15px;
+  margin: 0 auto;
 }
 
 /* -------------------- Typography -------------------- */
@@ -186,7 +191,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  padding: 0; 
+  padding: 120px 15px;
 }
 
 .ourgoal li {
@@ -225,7 +230,6 @@ header {
 
 /* -------------------- Our Portfolio Section -------------------- */
 
-
 .ourportfolio ul {
   display: flex;
   flex-wrap: wrap;
@@ -237,7 +241,9 @@ header {
 .ourportfolio li {
   width: 360px;
   background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e7e9fc;
 }
 
 .ourportfolio h3 {
@@ -294,7 +300,7 @@ header {
 
 /* Strategy Bölümü */
 .strategy-section {
-  width: 1128px;
+  width: 1440px;
   height: 104px;
   margin: 0 auto;
 }
@@ -305,11 +311,12 @@ header {
   height: 732px;
   margin: 0 auto;
   background-color: #f4f4fd;
+  padding: 120px;
 }
 
 /* Our Portfolio bölümü */
 .ourportfolio {
-  width: 1128px;
+  width: 1440px;
   height: 1000px;
   margin: 0 auto;
 }
@@ -320,6 +327,6 @@ header {
   height: 312px;
   opacity: 1;
   position: relative;
+  padding: 120px;
 }
 /* ----------------------------------- */
-
