@@ -1,0 +1,325 @@
+/* -------------------- Global Reset -------------------- */
+/* Tüm elementlerin margin ve padding sıfırlanıyor */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Blok tipindeki yazı elemanları için ekstra margin-padding sıfırlama */
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body temel font ve renk ayarları */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  background-color: #ffffff;
+}
+
+/* Liste işaretleri kaldırıldı */
+ul {
+  list-style: none;
+}
+
+/* Resimler blok özellikleri */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------------------- Container -------------------- */
+.container {
+  width: 1158px;       
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;  
+  padding-right: 15px;
+}
+
+/* -------------------- Typography -------------------- */
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 32px; /* Dikey boşluk */
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #434455;
+  margin-bottom: 16px;
+}
+
+/* -------------------- Header -------------------- */
+header {
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+.headerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 156px;
+}
+
+/* Logo */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logosol {
+  color: #4d5ae5;
+}
+
+.logosag2 {
+  color: #2e2f42;
+}
+
+/* Navigasyon */
+.navigasyon {
+  display: flex;
+  gap: 40px;
+}
+
+.navigasyon a {
+  color: #2e2f42;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigasyon a:hover {
+  color: #404bbf;
+}
+
+/* Bilgi linkleri */
+.infolar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infolar a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #434455;
+}
+
+.infolar a:hover {
+  color: #404bbf;
+}
+
+/* -------------------- Section Ortak Sınıfı -------------------- */
+.section {
+  padding: 120px 0;
+  margin: 0;
+}
+
+/* -------------------- Hero Section -------------------- */
+.giris {
+  background-color: #2e2f42;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  text-align: center;
+}
+
+/* Buton */
+.order {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.order:hover {
+  background-color: #404bbf;
+}
+
+/* -------------------- Our Goal Section -------------------- */
+.ourgoal ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0; 
+}
+
+.ourgoal li {
+  width: 264px;
+}
+
+.ourgoal h3 {
+  margin-bottom: 8px;
+}
+
+/* -------------------- Our Team Section -------------------- */
+.ourteam {
+  background-color: #f4f4fd;
+}
+
+.ourteam ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+}
+
+.ourteam li {
+  background-color: #ffffff;
+  padding: 32px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 264px;
+}
+
+.ourteam h3 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+/* -------------------- Our Portfolio Section -------------------- */
+
+
+.ourportfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 0;
+}
+
+.ourportfolio li {
+  width: 360px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.ourportfolio h3 {
+  margin-top: 32px;
+  margin-left: 16px;
+}
+
+.ourportfolio p {
+  margin: 8px 0 32px 16px;
+}
+
+/* -------------------- Footer -------------------- */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 156px;
+  color: #f4f4fd;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer .logosag {
+  color: #ffffff;
+}
+
+.bitisyazi {
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* -------------------- Ekstra Tasarım Kuralları -------------------- */
+
+/* Topline */
+.topline {
+  width: 1440px;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Hero Image genişliği ve yüksekliği */
+.hero-image {
+  width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* Strategy Bölümü */
+.strategy-section {
+  width: 1128px;
+  height: 104px;
+  margin: 0 auto;
+}
+
+/* Our Team bölümü genişliği ve yüksekliği */
+.ourteam {
+  width: 1440px;
+  height: 732px;
+  margin: 0 auto;
+  background-color: #f4f4fd;
+}
+
+/* Our Portfolio bölümü */
+.ourportfolio {
+  width: 1128px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+/* Footer genişlik ve yükseklik */
+.footer {
+  width: 1440px;
+  height: 312px;
+  opacity: 1;
+  position: relative;
+}
+/* ----------------------------------- */
+
