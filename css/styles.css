@@ -46,7 +46,6 @@ img {
 /* -------------------- Container -------------------- */
 .container {
   max-width: 1440px;
-  padding: 120px 15px;
   margin: 0 auto;
 }
 
