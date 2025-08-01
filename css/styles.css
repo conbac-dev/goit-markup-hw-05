@@ -423,14 +423,13 @@ header {
   background-color: #f4f4fd;
   padding: 120px;
 }
-
 /* Our Portfolio bölümü */
 .ourportfolio {
   width: 1440px;
-  height: 1000px;
+  height: 1200px;
   margin: 0 auto;
+  padding: 120px;
 }
-
 /* Footer genişlik ve yükseklik */
 .footer {
   gap: 20px;
