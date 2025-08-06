@@ -91,6 +91,13 @@ p {
   letter-spacing: 2%;
   color: #ffffff;
 }
+.footer_email {
+  font-style: normal;
+  font-weight: 400;
+  size: 12px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
 
 /* -------------------- Header -------------------- */
 header {
@@ -230,6 +237,49 @@ header {
 
 .order:hover {
   background-color: #404bbf;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease, visibility 300ms ease;
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+  transform: translateY(-30px);
+  transition: transform 300ms ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 /* -------------------- Our Goal Section -------------------- */
 .ourgoal ul {
@@ -397,7 +447,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   color: white;
   padding: 25px;
   box-sizing: border-box;
@@ -488,6 +538,34 @@ header {
 .footer .footerul {
   display: flex;
   gap: 100px;
-  justify-content: left;
+  justify-content: center;
+}
+.footer_email {
+  display: inline-flex;
+  width: 264px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #2e2f42;
+}
+.footer_subscribe_button {
+  display: inline-flex;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
 }
 /* ----------------------------------- */
+
+
