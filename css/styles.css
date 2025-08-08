@@ -283,30 +283,27 @@ header {
   text-decoration: none;
   color: #000;
 }
-.modal-label{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 360px;
-  height: 58px;
-}
+
 .modal-send{
   display: flex;
   text-align: center;
   justify-content: center;
 }
-.modal-w{
+.modal-w,
+.modal-label-b {
   width: 360px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid #2E2F4266
-}
-.modal-label-b{
-  width: 360px;
-  height: 120px;
+  height: 40px; 
   border-radius: 4px;
   border: 1px solid #2E2F4266;
-  
+  box-sizing: border-box; 
+  padding-left: 35px; 
+}
+
+.modal-label-b {
+  height: 110px;
+  resize: none;
+  box-sizing: border-box; 
+  padding-left: 12px;
 }
 .modal-form{
   display: flex;
@@ -318,21 +315,21 @@ header {
   position: absolute;
   width: 12x;
   height: 12px;
-  top: 98px;
+  top: 108px;
   left: -98px;
 }
 .icon-icon-telephone{
   position: absolute;
   width: 12x;
   height: 12px;
-  top: 172px;
+  top: 188px;
   left: -98px;
 }
 .icon-icon-email{
   position: absolute;
   width: 12x;
   height: 12px;
-  top: 246px;
+  top: 268px;
   left: -98px;
 }
 .formradius{
@@ -358,6 +355,7 @@ header {
   height: 56px;
   border: none;
   border-radius: 4px;
+  cursor:pointer
 }
 /* -------------------- Our Goal Section -------------------- */
 .ourgoal ul {
